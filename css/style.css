@@ -6,15 +6,27 @@
 body{
   background-color: #FFE4D6;
   display: grid;
-  grid-template-rows: 10% 1fr 10%;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
   min-height: 100vh;
 }
+header { 
+  grid-area: header;
+}
 main {
+  grid-area: main;
   overflow-y: auto;
+}
+footer { 
+  grid-area: footer; 
 }
 .fluid-bar{
   width: 100vw;
-  height: 75px;
+  max-height: 75px;
 }
 .bgColorPrimary{
   background-color: #E3BED3;
@@ -85,7 +97,7 @@ main {
   font-family: 'Cabin Sketch', sans-serif;
   font-size: 2rem;
 }
-.label{
+.label-text{
   font-family: 'Cabin Sketch', sans-serif;
   font-size: 1rem;
 }
@@ -93,7 +105,7 @@ main {
   margin: 20px;
   display: flex;
   gap:30px;
-  justify-content: start;
+  justify-content: center;
   align-content: center;
 }
 .img-rrss{

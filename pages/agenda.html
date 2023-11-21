@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Imperial+Script&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <title> Anngi Nails </title>
 </head>
 <body>
@@ -26,7 +26,7 @@
           </div>
           <div>
             <img
-              src="./img/AnggiNailsArt.png"
+              src="../img/AnggiNailsArt.png"
               alt="logo anggiNailsArt"
               class="logo-main"
             />
@@ -39,39 +39,39 @@
           </div>
           <div class="offcanvas-body p-0">
             <ul class="navbar-nav justify-content-end">
-              <a href="#" class="hipervincle">
-                <li class="option-nav selected-menu px-5">Home</li> 
+              <a href="../index.html" class="hipervincle">
+                <li class="option-nav px-5">Home</li> 
               </a>
-              <a href="./pages/productos.html" class="hipervincle">
+              <a href="./productos.html" class="hipervincle">
                 <li class="option-nav px-5">Productos</li>
               </a>
-              <a href="./pages/servicios.html" class="hipervincle">
+              <a href="./servicios.html" class="hipervincle">
                 <li class="option-nav px-5">Servicios</li>
               </a>
-              <a href="./pages/galeria.html" class="hipervincle">
+              <a href="./galeria.html" class="hipervincle">
                 <li class="option-nav px-5">Galería</li>
               </a>
-              <a href="./pages/agenda.html" class="hipervincle">
-                <li class="option-nav px-5">Agenda</li>
+              <a href="#" class="hipervincle">
+                <li class="option-nav selected-menu px-5">Agenda</li>
               </a>
-              <a href="./pages/contactanos.html" class="hipervincle">
+              <a href="./contactanos.html" class="hipervincle">
                 <li class="option-nav px-5">Contáctanos</li>
               </a>
             </ul>
             <div class="container-socials-networks">
               <div>
                 <a href="https://wa.me/+56931753580" target="_blank">
-                  <img src="./img/whatsapp.png" alt="social whatsapp" class="img-rrss">
+                  <img src="../img/whatsapp.png" alt="social whatsapp" class="img-rrss">
                 </a>
               </div>
               <div>
                 <a href="https://www.facebook.com/joseleonardobm7" target="_blank">
-                  <img src="./img/Facebook.png" alt="social facebook" class="img-rrss">
+                  <img src="../img/Facebook.png" alt="social facebook" class="img-rrss">
                 </a>
               </div>
               <div>
                 <a href="https://www.instagram.com/joseleonardobm7" target="_blank">
-                  <img src="./img/Instagram.png" alt="social instagram" class="img-rrss">
+                  <img src="../img/Instagram.png" alt="social instagram" class="img-rrss">
                 </a>
               </div>
             </div>
@@ -82,26 +82,34 @@
   </header>
   <main class="row content-page p-0 m-0">
     <article>
-      <h1 class="p-4 title"> 
-        Bienvenidos a Anggi Nails Art...
+      <h1 class="title text-center container pt-4">
+        Agenda tu Hora
       </h1>
-      <div class="container-fluid row d-flex justify-content-center p-4">
-          <div class="col-12 col-lg-5 d-flex justify-content-center">
-            <img src="./img/imgHome.jpg" alt="cat example" class="img-home">
-          </div>
-          <div class="col-12 col-lg-7 d-flex flex-column p-3 py-lg-0">
-            <p class="subtitle">
-              Acá podrás tener la mejor de tus experiencias, contamos con personal especializado en brindar servicios de cuidado de las uñas, como manicura, pedicura, aplicación de uñas artificiales y tratamientos para su cuidado, tenemos todo lo que necesitas para que luzcas tus uñas lindas y sanas en todo momento.
-              Atrévete a lucir hermosa
-            </p>
-            <p class="subtitle text-end justify-text"> Disfruta tu visita... </p>
-          </div>
+      <div class="container-fluid px-5">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"> Tu dirección de Correo </label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label"> Tu nombre y apellido </label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu nombre y apellido">
+        </div>
+        <div class=""mb-3">
+          <label for="startDate">Fecha y Hora de atención </label>
+          <input id="startDate" class="form-control" type="datetime-local" value="2023-11-20T23:59"/>
+        </div>
+        <p class="subtitle container">
+          Reserva tu atención con nosotros.
+        </p>
+        <div class="container-fluid d-flex justify-content-center">
+          <button type="button" class="btn btn-primary btn-lg text-center"> Reservar </button>
         </div>
       </div>
+      
     </article>
   </main>
   <footer class="bgColorPrimary">
-    <div class="d-flex flex-column justify-content-end align-items-center fluid-bar">
+    <div class="d-flex flex-column justify-content-end align-items-center">
       <div class="text-copyrigth">©AnggiNailsArt</div>
       <div class="text-copyrigth">Octubre 2023</div>
       <div class="text-copyrigth">Todos los derechos reservados</div>
