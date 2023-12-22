@@ -12,7 +12,7 @@ $background-color_4: #E3BED3;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow: hidden;
+	overflow-x: hidden;
 } 
 body {
 	background-color: $background-color_1;
@@ -23,22 +23,22 @@ body {
 	grid-template-areas: "header" "main" "footer";
 	min-height: 100vh;
 	/// OCULTAR SCROLL QUE GENERA ANIMATE.CSS
-	overflow: hidden;
+	overflow-x: hidden;
 }
 header {
 	grid-area: header;
 	// OCULTAR SCROLL QUE GENERA ANIMATE.CSS
-	overflow: hidden;
+	overflow-x: hidden;
 }
 main {
 	grid-area: main;
 	// OCULTAR SCROLL QUE GENERA ANIMATE.CSS
-	overflow: hidden;
+	overflow-x: hidden;
 }
 footer {
 	grid-area: footer;
 	// OCULTAR SCROLL QUE GENERA ANIMATE.CSS
-	overflow: hidden;
+	overflow-x: hidden;
 }
 .fluid-bar {
 	width: 100vw;
