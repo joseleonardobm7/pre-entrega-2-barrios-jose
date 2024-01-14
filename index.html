@@ -16,111 +16,102 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-  <header class="row p-0 m-0">
-    <nav class="navbar fixed-top col-12 p-0">
-      <div class="container-fluid d-flex justify-content-space-between align-items-center fluid-bar bgColorPrimary">
-        <div class="icon-rounded-container logo-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="material-icons icon-rounded"> menu </span>
+  <!-- BARRA SUPERIOR - HEADER -->
+  <header class="bgColorPrimary">
+    <nav class="fluid-bar d-flex justify-content-between align-items-center px-3">
+      <div class="icon-rounded-container" data-bs-toggle="offcanvas" data-bs-target="#navBarAnggiNails" aria-controls="navBarAnggiNails" aria-label="Toggle navigation">
+        <span class="material-icons icon-rounded"> menu </span>
+      </div>
+      <div class="d-flex justify-content-end align-items-center">
+        <div class="icon-rounded-container mx-3">
+          <span class="material-icons icon-rounded" data-bs-toggle="modal" data-bs-target="#loginModal"> person </span>
         </div>
-        <div class="header-content-right">
-          <div class="icon-rounded-container">
-            <span class="material-icons icon-rounded" data-bs-toggle="modal" data-bs-target="#loginModal"> person </span>
-          </div>
-          <div>
-            <img
-              src="./img/AnggiNailsArt.png"
-              alt="logo anggiNailsArt"
-              class="logo-main"
-            />
-          </div>
-        </div>
-        <div class="offcanvas offcanvas-start bgColorPrimary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title title" id="offcanvasNavbarLabel">💅Anngi Nails Art</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body p-0">
-            <ul class="navbar-nav justify-content-end">
-              <a href="#" class="hipervincle">
-                <li class="option-nav selected-menu px-5">Home</li> 
-              </a>
-              <a href="./pages/productos.html" class="hipervincle">
-                <li class="option-nav px-5">Productos</li>
-              </a>
-              <a href="./pages/servicios.html" class="hipervincle">
-                <li class="option-nav px-5">Servicios</li>
-              </a>
-              <a href="./pages/galeria.html" class="hipervincle">
-                <li class="option-nav px-5">Galería</li>
-              </a>
-              <a href="./pages/agenda.html" class="hipervincle">
-                <li class="option-nav px-5">Agenda</li>
-              </a>
-              <a href="./pages/contactanos.html" class="hipervincle">
-                <li class="option-nav px-5">Contáctanos</li>
-              </a>
-            </ul>
-            <div class="container-socials-networks">
-              <div>
-                <a href="https://wa.me/+56931753580" target="_blank">
-                  <img src="./img/whatsapp.png" alt="social whatsapp" class="img-rrss">
-                </a>
-              </div>
-              <div>
-                <a href="https://www.facebook.com/joseleonardobm7" target="_blank">
-                  <img src="./img/Facebook.png" alt="social facebook" class="img-rrss">
-                </a>
-              </div>
-              <div>
-                <a href="https://www.instagram.com/joseleonardobm7" target="_blank">
-                  <img src="./img/Instagram.png" alt="social instagram" class="img-rrss">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img
+          src="./img/anggi-nails-art.png"
+          alt="logo anggiNailsArt"
+          class="logo-main mx-3"
+        />
       </div>
     </nav>
   </header>
-  <main class="row content-page p-0 m-0">
-    <article>
-      <h1 class="p-4 title animate__animated animate__bounceInRight animate__delay-2s"> 
-        Bienvenidos a Anggi Nails Art...
-      </h1>
-      <div class="container-fluid row d-flex justify-content-center p-4">
-          <div class="col-12 col-lg-5 d-flex justify-content-center animate__animated animate__bounceInLeft animate__delay-3s">
-            <a href="./pages/galeria.html" class="hipervincle d-flex justify-content-center">
-              <img src="./img/imgHome.jpg" alt="Home anggiNailsArt" class="img-home animate__animated animate__pulse ">
-            </a>
-          </div>
-          <div class="col-12 col-lg-7 d-flex flex-column p-3 py-lg-0 animate__animated animate__bounceInUp animate__delay-4s">
-            <p class="subtitle">
-              Acá podrás tener la mejor de tus experiencias, contamos con personal especializado en brindar servicios de cuidado de las uñas, como manicura, pedicura, aplicación de uñas artificiales y tratamientos para su cuidado, tenemos todo lo que necesitas para que luzcas tus uñas lindas y sanas en todo momento.
-              Atrévete a lucir hermosa
-            </p>
-            <p class="subtitle text-end justify-text"> Disfruta tu visita... </p>
-          </div>
-        </div>
+  <!-- CONTENIDO PAGE -->
+  <main class="p-0 m-0">
+    <h1 class="p-4 font-family-primary font-size-l"> Bienvenidos a Anggi Nails Art... </h1>
+    <div class="container-fluid d-flex justify-content-start align-items-center px-5 row">
+      <div class="col-12 col-lg-5 d-flex flex-column p-3 py-lg-0">
+        <a href="./pages/galeria.html" class="hipervincle d-flex justify-content-center img-home">
+          <img src="./img/img-home.jpg" alt="Home anggiNailsArt" class="img-home">
+        </a>
       </div>
-    </article>
+      <div class="col-12 col-lg-7 d-flex flex-column p-3 py-lg-0">
+        <p class=" font-family-primary font-size-m justify-text">
+          Acá podrás tener la mejor de tus experiencias, contamos con personal especializado en brindar servicios de cuidado de las uñas, como manicura, pedicura, aplicación de uñas artificiales y tratamientos para su cuidado, tenemos todo lo que necesitas para que luzcas tus uñas lindas y sanas en todo momento.
+          Atrévete a lucir hermosa
+        </p>
+        <p class="font-family-primary font-size-m text-end justify-text"> Disfruta tu visita... </p>
+      </div>
+    </div>
   </main>
-  <footer class="bgColorPrimary animate__animated animate__backInUp animate__delay-5s">
-    <div class="d-flex flex-column justify-content-end align-items-center fluid-bar bgColorPrimary">
-      <div class="text-copyrigth">©AnggiNailsArt</div>
-      <div class="text-copyrigth">Octubre 2023</div>
-      <div class="text-copyrigth">Todos los derechos reservados</div>
+  <!-- BARRA INFERIOR - FOOTER -->
+  <footer class="bgColorPrimary">
+    <div class="fluid-bar d-flex flex-column justify-content-end align-items-center">
+      <div class="font-family-primary font-size-xs font-weight-bold">©AnggiNailsArt</div>
+      <div class="font-family-primary font-size-xs font-weight-bold">Octubre 2023</div>
+      <div class="font-family-primary font-size-xs font-weight-bold">Todos los derechos reservados</div>
     </div>
   </footer>
+  <!-- NAVBAR QUE SE ABRE DESDE EL LATERAL -->
+  <div class="offcanvas offcanvas-start bgColorPrimary" tabindex="-1" id="navBarAnggiNails" aria-labelledby="offCanvasNavBarAnggiNails">
+    <div class="offcanvas-header nav-bar-header">
+      <span class="offcanvas-title font-family-primary font-size-l h5" id="offCanvasNavBarAnggiNails">💅Anngi Nails Art</span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <ul class="navbar-nav justify-content-end">
+        <a href="#" class="hipervincle">
+          <li class="option-nav font-family-secondary font-size-l px-5 py-3 selected-menu">Home</li> 
+        </a>
+        <a href="./pages/productos.html" class="hipervincle">
+          <li class="option-nav font-family-secondary font-size-l px-5 py-3 ">Productos</li>
+        </a>
+        <a href="./pages/servicios.html" class="hipervincle">
+          <li class="option-nav font-family-secondary font-size-l px-5 py-3 ">Servicios</li>
+        </a>
+        <a href="./pages/galeria.html" class="hipervincle">
+          <li class="option-nav font-family-secondary font-size-l px-5 py-3 ">Galería</li>
+        </a>
+        <a href="./pages/agenda.html" class="hipervincle">
+          <li class="option-nav font-family-secondary font-size-l px-5 py-3 ">Agenda</li>
+        </a>
+        <a href="./pages/contactanos.html" class="hipervincle">
+          <li class="option-nav font-family-secondary font-size-l px-5 py-3 ">Contáctanos</li>
+        </a>
+      </ul>
+      <div class="container-socials-networks">
+        <a href="https://wa.me/+56931753580" target="_blank">
+          <img src="./img/whatsapp.png" alt="social whatsapp" class="img-rrss">
+        </a>
 
-
-   <!-- MODAL PARA UN FUTURO INICIO DE SESIÓN -->
-   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+        <div>
+          <a href="https://www.facebook.com/joseleonardobm7" target="_blank">
+            <img src="./img/facebook.png" alt="social facebook" class="img-rrss">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/joseleonardobm7" target="_blank">
+            <img src="./img/instagram.png" alt="social instagram" class="img-rrss">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL PARA UN FUTURO INICIO DE SESIÓN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bgColorSecondary">
         <form>
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio de Sesión</h1>
+            <span class="modal-title fs-5 h2" id="exampleModalLabel">Inicio de Sesión</span>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -139,17 +130,14 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancelar </button>
-            <button type="button" class="btn bgColorPrimary"> Ingresar </button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cancelar </button>
+            <button type="button" class="btn btn-success"> Ingresar </button>
           </div>
         </form>
       </div>
     </div>
   </div>
-
-
-
-
+  <!-- LINKS DE JAVASCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
